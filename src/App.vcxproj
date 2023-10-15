@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>Downloader</ProjectName>
+    <ProjectGuid>{D175BBA1-8E6A-4592-8F6C-3ABA862250BB}</ProjectGuid>
+    <RootNamespace>Downloader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34018.303</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release\Downloader.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>./;../common;../WTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;SQLITE_HAS_CODEC;COMPILER_MSVC;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release\$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <WarningLevel>Level2</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <OutputFile>.\Release\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>del  /f /q  ..\0utPut\Release
+xcopy  /Y  $(OutDir)$(TargetFileName)  ..\0utPut\Release\
+..\bin\upx-4.1.0-win32\upx.exe  ..\0utPut\Release\Downloader.exe  -o  ..\0utPut\Release\CompressedDownloader.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug\Downloader.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../common;../WTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;SQLITE_HAS_CODEC;COMPILER_MSVC;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug\$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>xcopy  $(OutDir)$(TargetFileName)  ..\0utPut\Debug\   /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="res\App.ico" />
+    <Image Include="res\png\1.png" />
+    <Image Include="res\png\2.png" />
+    <Image Include="res\png\3.png" />
+    <Image Include="res\png\4.png" />
+    <Image Include="res\png\5.png" />
+    <Image Include="res\png\6.png" />
+    <Image Include="res\png\AboutDlg.png" />
+    <Image Include="res\png\account_close.png" />
+    <Image Include="res\png\backmain.png" />
+    <Image Include="res\png\btn_min.png" />
+    <Image Include="res\png\checkbox.png" />
+    <Image Include="res\png\dialog_btn_main.png" />
+    <Image Include="res\png\edit_install_back.png" />
+    <Image Include="res\png\lightpoint.png" />
+    <Image Include="res\png\LOGO.png" />
+    <Image Include="res\png\selctpath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\xml\EngUIAgreement.xml" />
+    <Xml Include="res\xml\EngUICannotDown.xml" />
+    <Xml Include="res\xml\EngUIContent.xml" />
+    <Xml Include="res\xml\EngUIMainWindow.xml" />
+    <Xml Include="res\xml\UIAgreement.xml" />
+    <Xml Include="res\xml\UICannotDown.xml" />
+    <Xml Include="res\xml\UIContent.xml" />
+    <Xml Include="res\xml\UIMainWindow.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\jsoncpp\reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\common\jsoncpp\value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\common\jsoncpp\writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\common\util\base.cpp" />
+    <ClCompile Include="..\common\util\md5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\common\util\system.cpp" />
+    <ClCompile Include="..\common\util\util_tools.cpp" />
+    <ClCompile Include="..\common\xml\tinystr.cpp" />
+    <ClCompile Include="..\common\xml\tinyxml.cpp" />
+    <ClCompile Include="..\common\xml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\common\xml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\common\xml\xmlhelper.cpp" />
+    <ClCompile Include="..\common\xzip\XUnzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="base\at_exist.cc" />
+    <ClCompile Include="base\common_threads.cc" />
+    <ClCompile Include="base\lazy_instance.cc" />
+    <ClCompile Include="base\MessageLoop.cc" />
+    <ClCompile Include="base\MessagePumpDefault.cc" />
+    <ClCompile Include="base\MessagePumpWin.cc" />
+    <ClCompile Include="base\notification_registrar.cc" />
+    <ClCompile Include="base\notification_service.cc" />
+    <ClCompile Include="base\PendingTask.cpp" />
+    <ClCompile Include="base\ref_counted.cc" />
+    <ClCompile Include="base\stringprintf.cc" />
+    <ClCompile Include="base\Thread.cc" />
+    <ClCompile Include="base\thread_local.cc" />
+    <ClCompile Include="base\WeakPtr.cc" />
+    <ClCompile Include="DirectUI\Draw.cpp" />
+    <ClCompile Include="DirectUI\DUIButton.cpp" />
+    <ClCompile Include="DirectUI\DUICheckBox.cpp" />
+    <ClCompile Include="DirectUI\DUIElement.cpp" />
+    <ClCompile Include="DirectUI\DUIElementsMgr.cpp" />
+    <ClCompile Include="DirectUI\DUIGDIResource.cpp" />
+    <ClCompile Include="DirectUI\DUIHyperLink.cpp" />
+    <ClCompile Include="DirectUI\DUILayeredEdit.cpp" />
+    <ClCompile Include="DirectUI\DUIOptionLine.cpp" />
+    <ClCompile Include="DirectUI\DUIPanel.cpp" />
+    <ClCompile Include="DirectUI\DUIProgress.cpp" />
+    <ClCompile Include="DirectUI\DUIRadioButton.cpp" />
+    <ClCompile Include="DirectUI\DUIStatic.cpp" />
+    <ClCompile Include="DirectUI\DUITab.cpp" />
+    <ClCompile Include="DirectUI\DUITabList.cpp" />
+    <ClCompile Include="DirectUI\DUITransWindow.cpp" />
+    <ClCompile Include="DirectUI\DUITransWindowEx.cpp" />
+    <ClCompile Include="DirectUI\DUIWindowStyle.cpp" />
+    <ClCompile Include="DirectUI\UpdateWindowBase.cpp" />
+    <ClCompile Include="DirectUI\UpdateWindowBaseEx.cpp" />
+    <ClCompile Include="Language\Language.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DownLoader\DownloadDelegate.cpp" />
+    <ClCompile Include="DownLoader\fetcherurl.cpp" />
+    <ClCompile Include="DownLoader\fetchfile.cpp" />
+    <ClCompile Include="Event\WaitableEvent.cc" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="LogAssist\LogAssist.cpp" />
+    <ClCompile Include="net\url_fetcher.cc" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="time\time.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI\FrameShowState.cpp" />
+    <ClCompile Include="UI\UIAgreement.cpp" />
+    <ClCompile Include="UI\UICannotDown.cpp" />
+    <ClCompile Include="UI\UIMainWindowEx.cpp" />
+    <ClCompile Include="UI\UtilityWindow.cpp" />
+    <ClCompile Include="Util\UtilApi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\util\base.h" />
+    <ClInclude Include="..\common\util\def.h" />
+    <ClInclude Include="..\common\util\md5.h" />
+    <ClInclude Include="..\common\util\system.h" />
+    <ClInclude Include="..\common\util\util_tools.h" />
+    <ClInclude Include="..\common\xml\tinystr.h" />
+    <ClInclude Include="..\common\xml\tinyxml.h" />
+    <ClInclude Include="..\common\xml\xmlhelper.h" />
+    <ClInclude Include="..\common\xzip\XUnzip.h" />
+    <ClInclude Include="base.h" />
+    <ClInclude Include="base\aligned_memory.h" />
+    <ClInclude Include="base\at_exist.h" />
+    <ClInclude Include="base\common_threads.h" />
+    <ClInclude Include="base\FastDelegate.h" />
+    <ClInclude Include="base\FastDelegateImpl.h" />
+    <ClInclude Include="base\lazy_instance.h" />
+    <ClInclude Include="base\macros.h" />
+    <ClInclude Include="base\MessageLoop.h" />
+    <ClInclude Include="base\MessagePump.h" />
+    <ClInclude Include="base\MessagePumpDefault.h" />
+    <ClInclude Include="base\MessagePumpWin.h" />
+    <ClInclude Include="base\notification_details.h" />
+    <ClInclude Include="base\notification_observer.h" />
+    <ClInclude Include="base\notification_registrar.h" />
+    <ClInclude Include="base\notification_service.h" />
+    <ClInclude Include="base\notification_source.h" />
+    <ClInclude Include="base\notification_types.h" />
+    <ClInclude Include="base\observer_list.h" />
+    <ClInclude Include="base\PendingTask.h" />
+    <ClInclude Include="base\ref_counted.h" />
+    <ClInclude Include="base\scoped_handle.h" />
+    <ClInclude Include="base\stringprintf.h" />
+    <ClInclude Include="base\string_util_win.h" />
+    <ClInclude Include="base\Thread.h" />
+    <ClInclude Include="base\thread_local.h" />
+    <ClInclude Include="base\WeakPtr.h" />
+    <ClInclude Include="base\WrapperObj.h" />
+    <ClInclude Include="DirectUI\Draw.h" />
+    <ClInclude Include="DirectUI\DUIButton.h" />
+    <ClInclude Include="DirectUI\DUICheckBox.h" />
+    <ClInclude Include="DirectUI\DUIDef.h" />
+    <ClInclude Include="DirectUI\DUIElement.h" />
+    <ClInclude Include="DirectUI\DUIElementsMgr.h" />
+    <ClInclude Include="DirectUI\DUIGDIResource.h" />
+    <ClInclude Include="DirectUI\DUIHyperLink.h" />
+    <ClInclude Include="DirectUI\DUILayeredEdit.h" />
+    <ClInclude Include="DirectUI\DUIOptionLine.h" />
+    <ClInclude Include="DirectUI\DUIPanel.h" />
+    <ClInclude Include="DirectUI\DUIProgress.h" />
+    <ClInclude Include="DirectUI\DUIRadioButton.h" />
+    <ClInclude Include="DirectUI\DUIStatic.h" />
+    <ClInclude Include="DirectUI\DUITab.h" />
+    <ClInclude Include="DirectUI\DUITabList.h" />
+    <ClInclude Include="DirectUI\DUITransWindow.h" />
+    <ClInclude Include="DirectUI\DUITransWindowEx.h" />
+    <ClInclude Include="DirectUI\DUIWindowStyle.h" />
+    <ClInclude Include="DirectUI\EventHandler.h" />
+    <ClInclude Include="DirectUI\UpdateWindowBase.h" />
+    <ClInclude Include="DirectUI\UpdateWindowBaseEx.h" />
+    <ClInclude Include="DownLoader\DownloadDelegate.h" />
+    <ClInclude Include="DownLoader\fetcherurl.h" />
+    <ClInclude Include="DownLoader\fetchfile.h" />
+    <ClInclude Include="Event\WaitableEvent.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Language\Language.h" />
+    <ClInclude Include="LogAssist\LogAssist.h" />
+    <ClInclude Include="net\url_fetcher.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="time\time.h" />
+    <ClInclude Include="UI\FrameShowState.h" />
+    <ClInclude Include="UI\UIAgreement.h" />
+    <ClInclude Include="UI\UICannotDown.h" />
+    <ClInclude Include="UI\UIMainWindowEx.h" />
+    <ClInclude Include="UI\UtilityWindow.h" />
+    <ClInclude Include="Util\UtilApi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Downloader.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Downloader.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

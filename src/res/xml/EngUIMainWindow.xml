@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"  encoding="utf-8"?>
+<window id="1" title="" left="0" top="0" width="492" height="402" center="1" style="2248146944" style_ex="0" titleHeight="246" icon="" logo="" frame="ABOUTDIALOG"  frameCorner="10,10,10,10" drawSimple = "1" topmost="1">
+  <button id="id_close" title="" left="33"  top="21" width="11" height="12" xAlignment="right" yAlignment="top" image="DLG_BTN_CLOSE" />
+  <button id="id_btn_min" title="" left="76"  top="21" width="11" height="12" xAlignment="right" yAlignment="top" image="DLG_BTN_MIN"/>
+  <panel id="id_panel_main" title="" left="6"  top="246" width="480" height="150" xAlignment="left" yAlignment="top" xStretch="fill" yStretch="none">
+    <button id="id_install" title="Install now" left="180"  top="28" width="120" height="42" xAlignment="left" yAlignment="top" image="DLG_BTN_INSTALL" textcolor="250,250,250" hovercolor="255,255,255" downcolor="255,255,255" hdelta="-5" bigfont="1" discolor="153,153,153"/>
+    <checkbox id="id_checkbox" title="Accept" tip="" left="20" top="89" width="50" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <link id="id_openurl" title="Agreement" tip="" left="70" top="94" width="120" height="27" xAlignment="left" yAlignment="top" linkcolor="250,250,250" hovercolor="250,250,250" visitedcolor="250,250,250"/>
+    <link id="id_userinstall" title="Custom >" tip="" left="385" top="94" width="120" height="27" xAlignment="left" yAlignment="top" linkcolor="0,213,254" hovercolor="0,213,254" visitedcolor="0,213,254"/>
+  </panel>
+  <panel id="id_panel_userdef" title="" left="6"  top="246" width="480" height="220" xAlignment="left" yAlignment="top" xStretch="fill" yStretch="none">
+    <button id="id_btn_installdir" title="Path" left="102"  top="28" width="82" height="29" xAlignment="right" yAlignment="top" image="SELECTPATH" textcolor="250,250,250" hovercolor="255,255,255" downcolor="255,255,255" hdelta="0"/>
+    <button id="id_btn_backmain" title="Back" left="264"  top="145" width="93" height="37" xAlignment="left" yAlignment="top" image="BACKMAIN" textcolor="250,250,250" hovercolor="255,255,255" downcolor="255,255,255" hdelta="-5" bigfont="1"/>
+    <button id="id_btn_installnow" title="Install" left="124"  top="145" width="120" height="37" xAlignment="left" yAlignment="top" image="DLG_BTN_INSTALL" textcolor="0,213,254" hovercolor="0,213,254" downcolor="0,213,254" hdelta="-5" bigfont="1" discolor="153,153,153"/>
+    <checkbox id="id_checkbox_shortcut" title="Desk shortcut" tip="" left="20" top="87" width="125" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <checkbox id="id_checkbox_easymenu" title="TaskBar shortcut" tip="" left="198" top="87" width="102" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <checkbox id="id_checkbox_autorun"  title="Autorun" tip="" left="358" top="87" width="102" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <static id="" title="Location：" tip="" left="20" top="33" width="230" height="29" xAlignment="left" yAlignment="top" color="250,250,250" bigfont="0"/>
+    <layedit id="id_edit_installpath" title="" tip="" left="91" top="27" width="268" height="30" style="0" xAlignment="left" yAlignment="top" bordercolor="69,68,73" backcolor="69,68,73" image="EDIT_INSTALL_BACK" textcolor="255,255,255" checkpath="1"/>
+    <static id="id_static_patherror" title="Choose other location!" left="91" top="62" width="230" heigth="29"  xAlignment="left" yAlignment="top" color="255,0,0"/>
+  </panel>
+  <panel id="id_panel_download" title="" left="6"  top="246" width="480" height="150" xAlignment="left" yAlignment="top" xStretch="fill" yStretch="none">
+    <static id="id_static_downing" title="Downloading...Please wait!~" tip="" left="150" top="28" width="280" height="29" xAlignment="left" yAlignment="top" color="250,250,250" bigfont="0"/>
+    <progress id="id_progress_download" title="" left="20" top="84" width="442" height="2"  xAlignment="left" yAlignment="top" image="LIGHTPOINT" progress_width="405" lightpointdela="-6"/>
+  </panel>
+  <panel id="id_panel_complete" title="" left="6"  top="246" width="480" height="150" xAlignment="left" yAlignment="top" xStretch="fill" yStretch="none">
+    <checkbox id="id_checkbox_present" title="Win gift!" tip="" left="20" top="28" width="200" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <checkbox id="id_checkbox_favirate" title="Add to favorites" tip="" left="329" top="28" width="150" height="27" xAlignment="left" yAlignment="top" image="CHECK_BOX" textcolor="250,250,250"/>
+    <button id="id_btn_usenow" title="Use now" left="112"  top="92" width="120" height="37" xAlignment="left" yAlignment="top" image="BACKMAIN" textcolor="0,213,254" hovercolor="0,213,254" downcolor="0,213,254" hdelta="-4" bigfont="1"/>
+    <button id="id_btn_complete" title="Complete" left="253"  top="92" width="120" height="37" xAlignment="left" yAlignment="top" image="BACKMAIN" textcolor="250,250,250" hovercolor="250,250,250" downcolor="250,250,250" hdelta="-4" bigfont="1"/>
+  </panel>
+  <static id="id_static_tryshutdown" title="Installing... Please wait!~" left="156" top="274" width="230" heigth="29"  xAlignment="left" yAlignment="top" color="255,0,0"/>
+</window>

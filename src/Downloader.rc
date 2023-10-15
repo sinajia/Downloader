@@ -1,0 +1,179 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+UIMAINWINDOW            XML                     "res\\xml\\UIMainWindow.xml"
+
+UICANNOTDOWN            XML                     "res\\xml\\UICannotDown.xml"
+
+UIAGREEMENT             XML                     "res\\xml\\UIAgreement.xml"
+
+UICONTENT               XML                     "res\\xml\\UIContent.xml"
+
+ENGUIMAINWINDOW         XML                     "res\\xml\\EngUIMainWindow.xml"
+
+ENGUICANNOTDOWN         XML                     "res\\xml\\EngUICannotDown.xml"
+
+ENGUIAGREEMENT          XML                     "res\\xml\\EngUIAgreement.xml"
+
+ENGUICONTENT            XML                     "res\\xml\\EngUIContent.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 6000
+//
+
+APP1                    6000                    "res\\png\\1.png"
+
+APP2                    6000                    "res\\png\\2.png"
+
+APP3                    6000                    "res\\png\\3.png"
+
+APP4                    6000                    "res\\png\\4.png"
+
+APP5                    6000                    "res\\png\\5.png"
+
+APP6                    6000                    "res\\png\\6.png"
+
+ABOUTDIALOG             6000                    "res\\png\\AboutDlg.png"
+
+DLG_BTN_CLOSE           6000                    "res\\png\\account_close.png"
+
+DLG_BTN_MIN             6000                    "res\\png\\btn_min.png"
+
+DLG_BTN_INSTALL         6000                    "res\\png\\dialog_btn_main.png"
+
+CHECK_BOX               6000                    "res\\png\\checkbox.png"
+
+APPLOGO                 6000                    "res\\png\\logo.png"
+
+SELECTPATH              6000                    "res\\png\\selctpath.png"
+
+BACKMAIN                6000                    "res\\png\\backmain.png"
+
+EDIT_INSTALL_BACK       6000                    "res\\png\\edit_install_back.png"
+
+LIGHTPOINT              6000                    "res\\png\\lightpoint.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\App.ico"
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

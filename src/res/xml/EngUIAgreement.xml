@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"  encoding="utf-8"?>
+<window id="2" title="" left="0" top="0" width="644" height="360" center="1" style="2248146944" style_ex="0" titleHeight="0" icon="" logo="" frame="ABOUTDIALOG"  frameCorner="10,10,10,10" drawSimple = "1" roundcorner="0" c_left="20" c_top="45">
+  <static id="id_static_tip1" title="License" left="253"  top="16" width="150" height="29" xAlignment="left" yAlignment="top" color="255,132,0" bigfont="1"/>
+</window>

@@ -1,0 +1,5 @@
+# Compiled Static libraries
+
+.vs/
+Debug/
+Release/

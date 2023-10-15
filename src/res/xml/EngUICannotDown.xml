@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"  encoding="utf-8"?>
+<window id="2" title="" left="0" top="0" width="382" height="232" center="1" style="2248146944" style_ex="0" titleHeight="41" icon="" logo="" frame="ABOUTDIALOG"  frameCorner="10,10,10,10" drawSimple = "1" roundcorner="0">
+  <button id="id_btn_close" title="" left="33"  top="21" width="11" height="12" xAlignment="right" yAlignment="top" image="DLG_BTN_CLOSE" />
+  <static id="id_static_tip1" title="Are you sure to cancel?" left="120"  top="96" width="200" height="30" xAlignment="left" yAlignment="top" color="250,250,250"/>
+  <button id="id_btn_ok" title="Yes" left="98"  top="162" width="84" height="28" xAlignment="left" yAlignment="top" image="SELECTPATH" textcolor="250,250,250" hovercolor="255,255,255" downcolor="250,250,250"/>
+  <button id="id_btn_cancal" title="No" left="201"  top="162" width="84" height="28" xAlignment="left" yAlignment="top" image="SELECTPATH" textcolor="250,250,250" hovercolor="255,255,255" downcolor="255,255,255"/>
+  <static id="id_static_tip2" title="Your computer does not have enough disk space or memory to use this program, and the installation will be terminated." left="41"  top="80" width="300" height="60" xAlignment="left" yAlignment="top" color="250,250,250"/>
+  <button id="id_btn_quit" title="Yes" left="151"  top="162" width="84" height="28" xAlignment="left" yAlignment="top" image="SELECTPATH" textcolor="0,213,254" hovercolor="0,213,254" downcolor="0,213,254"/>  
+</window>

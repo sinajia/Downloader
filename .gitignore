@@ -1,0 +1,10 @@
+# Compiled Static libraries
+
+.vs/
+0utPut/
+Debug/
+Release/
+
+*.aps
+*.vcxproj.user
+*.vcproj.user
