@@ -4,7 +4,7 @@
 
 ## Features:
 
-- Pure C++.
+- Pure C++ (std:c++14).
 - Tiny, the release version is only 414kb.
 - Without any other dependencies.
 - Just modify a little, very easy to use.
