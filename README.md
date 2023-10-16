@@ -6,6 +6,7 @@
 
 - Pure C++.
 - Tiny, the release version is only 414kb.
+- Without any other dependencies.
 - Just modify a little, very easy to use.
 - Very beautiful UI framework, highly customizable.
 - Download a zip file and install it to the specified directory.
