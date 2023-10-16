@@ -5,10 +5,10 @@
 ## Features:
 
 - Pure C++.
-- Tiny. The release version is only 414kb.
-- Just modify a little.
+- Tiny, the release version is only 414kb.
+- Just modify a little, very easy to use.
 - Very beautiful UI framework, highly customizable.
-- Download the zip file and install it to the specified directory.
+- Download a zip file and install it to the specified directory.
 
 ## Compile and Build
 
@@ -38,11 +38,11 @@ std::string CGlobal::openurl_ = "https://github.com/sinajia/Downloader";
 /// </configuration>
 ```
 
-You only need to modify the values of the above five variables.
+You should modify the values of the above five variables.
 
 The program will first request a json string from a specified resource. The get request url is stored in CGlobal::downloadurl_. Your server side needs to give the real download link.
 
-Here is an example of a server side (node.js)
+Here is an example of a server side (Node.js)
 
 ```js
 const express = require('express')
