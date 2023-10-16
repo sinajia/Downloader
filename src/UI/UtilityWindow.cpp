@@ -17,7 +17,7 @@ BOOL CUtilityWindow::Initialize() {
 
   HWND hwnd = NULL;
 
-  hwnd = Create(HWND_MESSAGE, rcPos, global.szGlobalString_, WS_POPUP);
+  hwnd = Create(HWND_MESSAGE, rcPos, CGlobal::szGlobalString_, WS_POPUP);
 
   if (!hwnd)
     return FALSE;

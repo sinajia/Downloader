@@ -25,9 +25,11 @@ public:
   std::wstring m_packPath;
   std::wstring m_strInstallPath;
 
-  static TCHAR* szGlobalString_;
-  static LONG UitlWndPrivacyCode_;
   static ITaskbarList4* pTaskbar_;
+
+  constexpr static TCHAR* szUtilityClassName_ = _T("AppInstallerWindow");
+  constexpr static TCHAR* szGlobalString_ = _T("65E6B66785CEC64B329");
+  constexpr static LONG UitlWndPrivacyCode_ = 0x746A04DE;
 
 };
 

@@ -21,8 +21,6 @@ std::string CGlobal::openurl_ = "https://github.com/sinajia/Downloader";
 
 
 ITaskbarList4* CGlobal::pTaskbar_ = nullptr;
-TCHAR* CGlobal::szGlobalString_ = _T("65E6B66785CEC64B329");
-LONG CGlobal::UitlWndPrivacyCode_ = 0x746A04DE;
 
 CGlobal::CGlobal(): hUitlWnd_(NULL), lanId_(0), m_zh(false) {
   m_macAddress = SystemCommon::Device::GetTheFirstMac();

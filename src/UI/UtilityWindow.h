@@ -10,7 +10,7 @@
 
 class CUtilityWindow : public CWindowImpl<CUtilityWindow> {
 public:
-  DECLARE_WND_CLASS(_T("AppInstallerWindow"))
+  DECLARE_WND_CLASS(CGlobal::szUtilityClassName_)
   CUtilityWindow();
   virtual ~CUtilityWindow();
   BEGIN_MSG_MAP(CUtilityWindow)

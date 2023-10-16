@@ -86,7 +86,7 @@ RETURN:
 }
 
 void CheckIsRunning() {
-  HWND hWnd = ::FindWindow(_T("AppInstallerWindow"), CGlobal::szGlobalString_);
+  HWND hWnd = ::FindWindow(CGlobal::szUtilityClassName_, CGlobal::szGlobalString_);
   if (hWnd && ::IsWindow(hWnd) &&
       GetWindowLongPtr(hWnd, GWLP_USERDATA) == CGlobal::UitlWndPrivacyCode_) {
 
