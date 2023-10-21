@@ -2,6 +2,8 @@
 
 🚀 A fast, tiny, native win32 downloader & installer for Windows platform.
 
+[中文介绍](./README-zh.md)
+
 ## Features:
 
 - Pure C++ (std:c++14).
