@@ -39,7 +39,7 @@ std::string CGlobal::openurl_ = "https://github.com/sinajia/Downloader";
 /// </configuration>
 ```
 
-需要修改上面五个变量。
+需要修改上面五个变量。它们代表的意义如下：
 
 downloadurl_，Get 请求地址。获取真正的 Zip 文件地址。
 
@@ -70,15 +70,19 @@ server.listen(5001, '0.0.0.0', function (err) {
 })
 ```
 
-本下载器会自动解析这个 Get 请求返回的 Json，downloadUrl 是必须的，表示真正的 Zip 文件的地址。Zip 文件就是程序的压缩包。
+本下载器会自动解析这个 Get 请求返回的 Json 字符串。字段 downloadUrl 是必须的，表示真正的 Zip 文件的地址。Zip 文件就是程序的压缩包。
 
 关于程序压缩包，可以参看 example\eXeScope.zip。
 
 你还应该替换 App.ico，这个文件在 src\res。将 App.ico 替换为你自己程序的 ico 文件。当然，文件名必须还是 App.ico。
 
-除此之外，你需要将 src\res\png 里面 1.png, 2.png, 3.png, 4.png, 5.png, 6.png 替换一下。这六张 png 图片是六张轮播图，需要换成你需要的。要求图片尺寸都是 480 ✖ 240。
+除此之外，你需要将 src\res\png 里面 1.png, 2.png, 3.png, 4.png, 5.png, 6.png 替换一下。这六张 png 图片是六张轮播图，替换成自己的。要求图片尺寸都是 480 × 240，png 格式。
 
 做完这些，重新编译，然后启动！
+
+## Star 一下
+
+本程序的创作耗费了很多精力，请动动发财的小手点个 Star ~~~///(^v^)\\\~~~
 
 ## 赞助
 
@@ -86,4 +90,5 @@ server.listen(5001, '0.0.0.0', function (err) {
 
 USDT(TRC20)
 
-TMPy2734UyQWiHehxks1kBYr8q6PEZGuHL
+TYWsj6oBb1zqkhMvYhXBuFYJD21dVWzXFL
+
