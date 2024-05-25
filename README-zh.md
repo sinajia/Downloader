@@ -2,6 +2,8 @@
 
 🚀 当必火🔥——让程序下载和安装变得简单！
 
+![](./assets/20240525104340.png)
+
 ## 特点:
 
 - Windows C++ 原生代码（std:c++14）
@@ -91,4 +93,3 @@ server.listen(5001, '0.0.0.0', function (err) {
 USDT(TRC20)
 
 TYWsj6oBb1zqkhMvYhXBuFYJD21dVWzXFL
-

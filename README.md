@@ -2,6 +2,8 @@
 
 🚀 A fast, tiny, native win32 downloader & installer for Windows platform.
 
+![](./assets/20240525104340.png)
+
 [中文介绍](./README-zh.md)
 
 ## Features:
@@ -77,4 +79,3 @@ Help support the development and maintenance of the software ❤️
 USDT(TRC20)
 
 TYWsj6oBb1zqkhMvYhXBuFYJD21dVWzXFL
-
